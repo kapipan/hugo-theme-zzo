@@ -34,7 +34,7 @@
           {{ with .Params.description }}
             {{ . }}
           {{ else }}
-            {{ .Summary | safeHTML }}
+            {{ .Summary  | plainify | safeHTML }}
           {{ end }}
         </div>
       </div>
